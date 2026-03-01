@@ -11,7 +11,7 @@ public class DatabaseConnection {
             con = DriverManager.getConnection(
                 "jdbc:mysql://localhost:3306/vehicle_parking?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC",
                 "root", // <-- change to your DB user
-                "moneca@2005"  // <-- change to your DB password
+                "pswrd"  // <-- change to your DB password
             );
             // Ensure the bookings table has the vehicle_type column (safe runtime migration)
             ensureVehicleTypeColumn(con);
